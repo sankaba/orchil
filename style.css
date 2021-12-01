@@ -3,3 +3,18 @@
     --subheading: #DBB1CA;
     --sectionings: #F5EBDA;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
