@@ -11,12 +11,28 @@
 
 /* nav bar */
 
-ul {
+.navbar {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 1rem;
+}
+
+/* end of navbar */
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    font-family: Poppins;
+    color: var(--headings);
+}
+
+.breadcrumb a {
+    color: var(--sectionings);
+    text-decoration: unset;
 }
 
 /*body from products to product description */
@@ -41,10 +57,6 @@ main {
     padding: 2px;
     text-align: center;
 }
-
-.flexbox {
-}
-
 
 .price {
     font-family: Poppins;
@@ -120,9 +132,98 @@ footer {
     font-size: 25px;
 }
 
+@media (max-width: 768px) {
+    .logo {
+        width: 35vw;
+        height: 5vh;
+    }
+
+    .carticon {
+        width: 7vw;
+        height: 5vh;
+    }
+   
+    .pagetitle {
+        background-color: var(--sectionings);
+        font-family: Poppins;
+        color: var(--headings);
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    main {
+        background-color: var(--subheading);
+        padding-top: 15px;
+        padding-bottom: 40px;
+        padding-right:3px;
+        padding-left: 3px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+
+
+    .prod-title {
+        font-family: Poppins;
+        color: #fff;
+        padding: 2px;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 40px;
+
+    }
+
+    .left {
+        margin-left: 5rem;
+    }
+
+    .right {
+        margin-right: 5rem;
+        margin-left: 3rem;
+    }
+
+    .pack {
+        display: block;
+        clip-path: circle(50% at 50% 50%);
+        width: 50vw;
+        height: 37vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price p {
+        font-size: 25px;
+    }
+    
+    .quantity {
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+
+    .socialmedia {
+        margin-top: 2rem;
+    }
+
+    .subscribe {
+        margin-left: 1rem;
+    }
+}
+
+
 @media (max-width: 389px) {
     .logo {
-        width: 37vw;
+        width: 47vw;
         height: 5vh;
     }
 
@@ -204,15 +305,17 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 2560px) {
     .logo {
-        width: 35vw;
+        width: 20vw;
         height: 5vh;
+        padding: 15px;
     }
 
     .carticon {
-        width: 7vw;
+        width: 4vw;
         height: 5vh;
+        padding: 15px;
     }
    
     .pagetitle {
@@ -220,20 +323,30 @@ footer {
         font-family: Poppins;
         color: var(--headings);
         text-align: center;
-        padding-top: 15px;
+        padding-top: 30px;
         padding-bottom: 15px;
-        margin-bottom: 40px;
-        font-size: 30px;
+        margin-bottom: 100px;
+        font-size: 60px;
+    }
+
+    .breadcrumb {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 3rem;
+        font-family: Poppins;
+        color: var(--headings);
+        font-size: 2rem;
     }
 
     main {
         background-color: var(--subheading);
         padding-top: 15px;
-        padding-bottom: 40px;
-        padding-right:3px;
-        padding-left: 3px;
-        margin-left: 40px;
-        margin-right: 40px;
+        padding-bottom: 33px;
+        padding-right: 33px;
+        padding-left: 33px;
+        margin-left: 16rem;
+        margin-right: 16rem;
 
     }
 
@@ -243,8 +356,8 @@ footer {
         color: #fff;
         padding: 2px;
         text-align: center;
-        font-size: 25px;
-        margin-top: 15px;
+        font-size: 3rem;
+        margin-top: 2rem;
         margin-bottom: 40px;
     }
 
@@ -257,21 +370,20 @@ footer {
     }
 
     .left {
-        margin-left: 5rem;
+        margin-left: 15px;
     }
 
     .right {
-        margin-right: 5rem;
-        margin-left: 7rem;
+        margin-right: 15px;
+        margin-left: 26px;
     }
 
     .pack {
         display: block;
         clip-path: circle(50% at 50% 50%);
-        width: 50vw;
+        width: 23vw;
         height: 37vh;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5rem;
     }
 
     .price p {
@@ -283,11 +395,23 @@ footer {
         padding-right: 40px;
     }
 
+    footer {
+        background-color: var(--sectionings);
+        margin-top: 100px;
+        padding: 1.2rem;
+    }
+    
+    .footer-email {
+        border: 1px var(--headings);
+        border-radius: 23px;
+        padding: 13px;
+        padding-left: 25px;
+        padding-right: 30px;
+    }
+
     .socialmedia {
         margin-top: 2rem;
     }
-
-    .subscribe {
-        margin-left: 1rem;
-    }
 }
+
+
