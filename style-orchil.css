@@ -1,0 +1,117 @@
+:root {
+    --headings: #E0B24E;
+    --subheading: #DBB1CA;
+    --sectionings: #F5EBDA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+main {
+    background-color: var(--subheading);
+}
+
+.pagetitle {
+    background-color: var(--sectionings);
+    font-family: Poppins;
+    color: var(--headings);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.prod-title {
+    font-family: Poppins;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+}
+
+.flexbox {
+}
+
+
+.price {
+    font-family: Poppins;
+    color: #fff;
+}
+
+form {
+    font-family: Poppins;
+    color: #fff;
+}
+
+.quantity {
+    border: 1px var(--headings);
+    border-radius: 23px;
+    padding: 4px;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: #E0B24E;
+    font-family: Poppins;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 23px;
+}
+
+.desc {
+    font-family: Poppins;
+    color: #fff;
+}
+
+
+footer {
+    background-color: var(--sectionings);
+    margin-top: 40px;
+    padding: 1.2rem;
+}
+
+.newsletter {
+    font-family: Poppins;
+    color: var(--headings)
+}
+
+.footer-email {
+    border: 1px var(--headings);
+    border-radius: 23px;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 45px;
+    margin-top: 1rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.socialmedia p {
+    font-family: Poppins;
+    color: var(--subheading);
+    font-size: 25px;
+}
